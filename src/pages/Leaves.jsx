@@ -50,7 +50,7 @@ export default function Leaves() {
       <h1>Leaves</h1>
       {isEmployee && (
         <form className="card form-grid" onSubmit={apply}>
-          <p><b>Balance: {balance} din</b></p>
+          <p><b>Balance: {balance} days</b></p>
           <select value={form.type} onChange={set("type")}>
             <option value="casual">Casual</option>
             <option value="sick">Sick</option>

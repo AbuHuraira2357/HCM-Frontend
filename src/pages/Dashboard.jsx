@@ -60,7 +60,7 @@ function EmployeeDashboard() {
   return (
     <div className="grid">
       <div className="card">
-        <h3>Aaj ki Attendance</h3>
+        <h3>Today's Attendance</h3>
         <p>Status: <span className={`badge ${record?.status || ""}`}>{record?.status || "not checked in"}</span></p>
         <p>Check-in: {fmt(record?.checkIn)}</p>
         <p>Check-out: {fmt(record?.checkOut)}</p>
