@@ -23,7 +23,7 @@ export default function Employees() {
     try {
       await api.post("/users", { ...form, basicSalary: Number(form.basicSalary) || 0 });
       setForm(empty);
-      setMsg({ type: "ok", text: "User ban gaya" });
+      setMsg({ type: "ok", text: "User Created" });
       load();
     } catch (err) {
       setMsg({ type: "alert", text: errMsg(err) });
@@ -55,7 +55,7 @@ export default function Employees() {
         {msg.text && <div className={msg.type === "ok" ? "ok" : "alert"}>{msg.text}</div>}
       </form>
 
-      <input className="search" placeholder="Name se search karo..." value={search}
+      <input className="search" placeholder="Search By Name........" value={search}
         onChange={(e) => setSearch(e.target.value)} />
 
       <div className="card table-wrap">
